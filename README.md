@@ -6,7 +6,7 @@ A simple UI demonstrating the objectives of the LTX team and their progress
 
 ```bash
 # Clone this repository
-$ git clone git@github.com:Adam0Sam/ltx-prod.git
+$ git clone git@github.com:ketsuraq/ltx-real.git
 
 # Go into the repository
 $ cd ltx-prod
