@@ -645,3 +645,7 @@ body:hover #mouse-follower {
         align-items: center;
     }
 }
+
+a:active {
+    text-decoration: none;
+}
