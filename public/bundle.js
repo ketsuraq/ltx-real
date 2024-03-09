@@ -15,12 +15,13 @@ const loadMouseFollower = () => {
 // #todo: add event listeners for the scroll so that scroll-snap works smoothly
 const loadEventListeners = () => {};
 
+
 const loadBallAnimation = () => {
   const colors = ["#ff000080", "#ff77005e", "#ff0000", "#ff7700", "#930000"];
   const numSections = document.querySelectorAll("section").length - 1 - 1;
   const avgBallSize = 10; // in rem
   // number of balls present in the page
-  const numBalls = 70;
+  const numBalls = 0;
   const balls = [];
 
   for (let i = 0; i < numBalls; i++) {
