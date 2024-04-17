@@ -121,6 +121,10 @@ section {
     width: 100%;
 }
 
+a {
+    color: inherit;
+}
+
 /* hamburger */
 /* px are used instead of rem due to the specific cross animation */
 .hamburger {
@@ -728,7 +732,7 @@ a {
     text-align: center;
     font-weight: bold;
     font-size: max(1.5vw, 1.1rem);
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .bubble img {
@@ -746,12 +750,20 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.8;
 }
 .central-bubble img {
     box-shadow: 0 0 200px 50px rgb(255, 0, 0, 0.7);
 }
 .central-bubble {
     opacity: 1;
+}
+.click-read {
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: var(--color-red-dark);
 }
 
 #mentors .members {
@@ -875,4 +887,53 @@ a {
 .footer-link {
     margin: 0;
     font-size: 1.3rem;
+}
+
+.component_text {
+    margin: 2rem auto;
+}
+.main_component {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.mc-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.component-list-element {
+    margin-bottom: 0.5rem;
+    font-family: Inter, sans-serif;
+    opacity: 0.7;
+}
+.component-text {
+    font-size: 1.3rem;
+}
+.main-component-photo {
+    border: 0.5rem solid var(--color-red-dark);
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: -10px 10px 25px 0px var(--color-orange-dark);
+    max-width: 300px;
+}
+.previous-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.main-component-photo > img {
+    border-radius: 1rem;
+}
+.back-button > button {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    opacity: 0.5;
+    text-decoration: underline;
 }
