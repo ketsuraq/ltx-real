@@ -54,7 +54,7 @@ button {
 
 h3,
 h4 {
-    max-width: 30ch;
+    max-width: 35ch;
     text-wrap: balance;
 }
 
@@ -713,6 +713,45 @@ a {
 }
 
 /* ROBOT*/
+.season-selection-dropdown {
+    position: relative;
+    direction: rtl;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+.dropdown-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: -10px 10px 25px 0px var(--color-orange-dark);
+    z-index: 1;
+    overflow: auto;
+}
+
+.showcase-dropdown-option {
+    display: block;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 2px solid var(--color-red-vibrant);
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.showcase-dropdown-option:hover {
+    cursor: pointer;
+}
+
+.showcase {
+    display: none;
+}
+
+.primary {
+    display: block !important;
+}
+
 .surrounding-bubbles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -833,13 +872,12 @@ a {
     max-width: 60%;
     font-family: Inter, sans-serif;
 }
-.outreach-button1, .outreach-button2 {
+.season-selection-button, .outreach-button1, .outreach-button2 {
     padding: 1rem;
     font-size: 1.3rem;
-    border: 2px solid var(--text-color-white);
-    border-radius: 1rem;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border: 2px solid var(--color-red-vibrant);
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     opacity: 0.7;
     box-shadow: -10px 10px 25px 0px var(--color-orange-dark);
     font-weight: bold;

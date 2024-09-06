@@ -72,4 +72,47 @@ const loadPage = () => {
   loadHamburger();
 };
 
+const more = document.querySelector(".outreach-button1");
+const less = document.querySelector(".outreach-button2");
+const addPanels = document.querySelectorAll(".panel2");
+const seasonsDropdown = document.querySelector(".season-selection-button");
+
+more.addEventListener('click', () => {
+  addPanels.forEach(panel => {
+    panel.style.opacity = '1';
+    panel.style.display = 'flex';
+  });
+  more.style.opacity = '0';
+  less.style.opacity = '0.8';
+  more.style.display = 'none';
+  less.style.display = 'block';
+});
+
+less.addEventListener('click', () => {
+  addPanels.forEach(panel => {
+    panel.style.opacity = '0';
+    panel.style.display = 'none';
+  });
+  more.style.opacity = '0.8';
+  less.style.opacity = '0';
+  more.style.display = 'block';
+  less.style.display = 'none';
+});
+
+seasonsDropdown.addEventListener('click', () => {
+  document.querySelector(".dropdown-content").style.display = 'block';
+  document.querySelector(".season-selection-button").style.borderBottomRightRadius = '0rem';
+})
+
+window.onclick = function(event) {
+  if (!event.target.matches('.season-selection-button')) {
+    document.querySelector(".dropdown-content").style.display = 'none';
+    document.querySelector(".season-selection-button").style.borderBottomRightRadius = '1rem';
+  }
+  if (event.target.matches('.showcase-dropdown-option')) {
+    document.querySelectorAll(".showcase").forEach((element) => {if(element.classList.contains("primary")) element.classList.remove("primary")})
+    document.querySelector(`#${event.target.id}-showcase`).classList.add("primary");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", loadPage);
