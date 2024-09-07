@@ -4,7 +4,7 @@
     "description": "A descriptive site for LTX, a robotics team of Vilnius Lyceum.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "all": "npm install && npx webpack"
     },
     "author": "",
     "license": "ISC",

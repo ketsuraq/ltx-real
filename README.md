@@ -5,15 +5,12 @@ A simple UI demonstrating the objectives of the LTX team and their progress
 ## How to setup
 
 ```bash
-# Clone this repository
+# Get the source
 $ git clone git@github.com:ketsuraq/ltx-real.git
 
-# Go into the repository
-$ cd ltx-prod
+# Navigate into the repository
+$ cd ltx-real
 
-# Install dependencies
-$ npm install
-
-# Bundle the code for production
-$ npx webpack
+# Execute 'all' script, which installs required dependencies and builds the application
+$ npm run all
 ```
