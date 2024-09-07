@@ -3,10 +3,10 @@ const path = require("path");
 module.exports = {
   mode: "development",
   devtool: "inline-source-map",
-  entry: "./js/index.js",
+  entry: "./src/scripts/index.js",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "./public"),
+    path: path.resolve(__dirname, "./dist"),
   },
   // how to use babel-loader with webpack?
   // rules: [
