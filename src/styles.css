@@ -581,10 +581,10 @@ body:hover #mouse-follower {
 /* BALL ANIMATION */
 
 .ball {
+    display: flex;
     position: absolute;
     border-radius: 100%;
-    opacity: 0.7;
-    position: absolute;
+    opacity: 0.7;    
     z-index: -100;
     filter: blur(30px);
 }
