@@ -21,6 +21,7 @@ const loadBallAnimation = () => {
     const ball = document.createElement("div");
     ball.classList.add("ball");
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+    // balls' 'top' and 'left' properties should not exceed 95% for the balls not to extend the page beyond the <html> tag
     ball.style.left = `${Math.random() * 95}%`;
     ball.style.top = `${Math.random() * 95}%`;
     ball.style.width = `${Math.random() * avgBallSize}rem`;
