@@ -806,8 +806,7 @@ a {
 }
 
 #mentors .members {
-    --width: 250px;
-    gap: 10vh 5vw;
+    gap: 7.24414rem;
     margin: 0 15vw;
     margin-bottom: 8vh;
 }
