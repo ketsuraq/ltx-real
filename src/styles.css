@@ -211,7 +211,7 @@ body.hide-overflow {
 }
 
 .hero__text {
-    max-width: 800px;
+    max-width: 900px;
     line-height: 1.2;
     font-size: max(2.4rem, 2.3vw);
     font-weight: 600;
