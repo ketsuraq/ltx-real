@@ -713,21 +713,23 @@ a {
 }
 
 /* ROBOT*/
-.season-selection-dropdown {
-    position: relative;
-    direction: rtl;
+.dropdown {
+    position: static;
     display: inline-block;
-    width: 100%;
-    margin: 0;
+    width: max-content;
+}
+
+#season-selection-dropdown {
+    margin-right: auto;
+    direction: rtl;
 }
 
 .dropdown-content {
     list-style-type: none;
     display: none;
-    position: absolute;
-    min-width: 160px;
+    position: static;
+    min-width: max-content;
     box-shadow: -10px 10px 25px 0px var(--color-orange-dark);
-    z-index: 1;
     overflow: auto;
 }
 
@@ -871,7 +873,7 @@ a {
     max-width: 60%;
     font-family: Inter, sans-serif;
 }
-.season-selection-button, .outreach-button1, .outreach-button2 {
+.dropdown-trigger-button, .outreach-button1, .outreach-button2 {
     padding: 1rem;
     font-size: 1.3rem;
     border: 2px solid var(--color-red-vibrant);

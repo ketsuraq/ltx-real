@@ -74,7 +74,6 @@ const loadPage = () => {
 const more = document.querySelector(".outreach-button1");
 const less = document.querySelector(".outreach-button2");
 const addPanels = document.querySelectorAll(".panel2");
-const seasonsDropdown = document.querySelector(".season-selection-button");
 
 more.addEventListener('click', () => {
   addPanels.forEach(panel => {
@@ -98,15 +97,14 @@ less.addEventListener('click', () => {
   less.style.display = 'none';
 });
 
-seasonsDropdown.addEventListener('click', () => {
-  document.querySelector(".dropdown-content").style.display = 'block';
-  document.querySelector(".season-selection-button").style.borderBottomRightRadius = '0rem';
-})
-
 window.onclick = function(event) {
-  if (!event.target.matches('.season-selection-button')) {
-    document.querySelector(".dropdown-content").style.display = 'none';
-    document.querySelector(".season-selection-button").style.borderBottomRightRadius = '1rem';
+  if (event.target.matches('#season-selection-button')) {
+    document.querySelector("#season-selection-dropdown-content").style.display = 'block';
+    document.querySelector("#season-selection-button").style.borderBottomRightRadius = '0rem';
+  }
+  if (!event.target.matches('#season-selection-button')) {
+    document.querySelector("#season-selection-dropdown-content").style.display = 'none';
+    document.querySelector("#season-selection-button").style.borderBottomRightRadius = '1rem';
   }
   if (event.target.matches('.showcase-dropdown-option')) {
     document.querySelectorAll(".showcase").forEach((element) => {if(element.classList.contains("primary")) element.classList.remove("primary")})
