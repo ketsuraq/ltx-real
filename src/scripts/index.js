@@ -32,7 +32,7 @@ const loadBallAnimation = () => {
 
   const animationDuration = 5000; // (miliseconds)
   // Keyframes
-  const yDisplacement = 150; // in rem
+  const yDisplacement = -150; // in rem
   const xDisplacement = 110; // in rem
   balls.forEach((ball, id) => {
     const to = {
