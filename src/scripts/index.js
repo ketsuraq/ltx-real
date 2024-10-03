@@ -14,14 +14,14 @@ const loadBallAnimation = () => {
   const colors = ["#ff000080", "#ff77005e", "#ff0000", "#ff7700", "#930000"];
   const avgBallSize = 10; // in rem
   // number of balls present in the page
-  const numBalls = 10;
+  const numBalls = 15;
   const balls = [];
 
   for (let i = 0; i < numBalls; i++) {
     const ball = document.createElement("div");
     ball.classList.add("ball");
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-    ball.style.left = `${Math.random() * 95}%`;
+    ball.style.left = `${Math.random() * 100}%`;
     ball.style.top = `${Math.random() * 95}%`;
     ball.style.width = `${Math.random() * avgBallSize}rem`;
     ball.style.height = ball.style.width;
