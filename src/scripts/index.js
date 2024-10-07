@@ -98,17 +98,11 @@ less.addEventListener('click', () => {
 });
 
 window.onclick = function(event) {
-  if (event.target.matches('#season-selection-button')) {
-    document.querySelector("#season-selection-dropdown-content").style.display = 'block';
-    document.querySelector("#season-selection-button").style.borderBottomRightRadius = '0rem';
-  }
-  if (!event.target.matches('#season-selection-button')) {
-    document.querySelector("#season-selection-dropdown-content").style.display = 'none';
-    document.querySelector("#season-selection-button").style.borderBottomRightRadius = '1rem';
-  }
-  if (event.target.matches('.showcase-dropdown-option')) {
-    document.querySelectorAll(".showcase").forEach((element) => {if(element.classList.contains("primary")) element.classList.remove("primary")})
-    document.querySelector(`#${event.target.id}-showcase`).classList.add("primary");
+  if (event.target.matches('.season-select-button')) {
+    document.querySelector(".selected-tab").classList.toggle("selected-tab");
+    event.target.classList.toggle("selected-tab");
+    document.querySelector(".primary").classList.toggle("primary");
+    document.querySelector(`#${event.target.id}-showcase`).classList.toggle("primary");
   }
 }
 
