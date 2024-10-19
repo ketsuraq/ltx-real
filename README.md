@@ -1,6 +1,6 @@
-# LTX Website
+# VLR Website
 
-A simple UI demonstrating the objectives of the LTX team and their progress
+A simple UI demonstrating the objectives of the Vilnius Lyceum Robotics team and their progress
 
 ## How to setup
 

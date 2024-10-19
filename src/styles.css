@@ -12,11 +12,13 @@
     --radial-gradient-red: radial-gradient(circle at 0 0, var(--color-red-dark), transparent 40%);
     --radial-gradient-orange: radial-gradient(circle at 100% 0, var(--color-orange-dark), transparent 40%);
     --vib-red-to-vib-orange-gradient: linear-gradient(236deg, var(--color-red-vibrant) 20.53%, var(--color-orange-vibrant) 86.31%);
-
     /* sizes */
     --header-height: 4rem;
     /* borders */
     --tab-bar-background: linear-gradient(90deg, rgba(255, 255, 255, 0.50) -1.52%, rgba(0, 0, 0, 0.00) 109.98%);
+    /* season selection tabs */
+    --tabs-horizontal-border-color: radial-gradient(circle, var(--color-red-vibrant) 0%, rgba(0, 0, 0, 0.00) 100%);
+    --selected-tab-background-color: radial-gradient(circle, var(--color-red-dark), transparent 110%);
 
     --main-text: 'Orbitron', Inter, sans-serif;
 }
@@ -211,7 +213,7 @@ body.hide-overflow {
 }
 
 .hero__text {
-    max-width: 800px;
+    max-width: 900px;
     line-height: 1.2;
     font-size: max(2.4rem, 2.3vw);
     font-weight: 600;
@@ -713,35 +715,13 @@ a {
 }
 
 /* ROBOT*/
-.season-selection-dropdown {
-    position: relative;
-    direction: rtl;
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-}
 
-.dropdown-content {
-    list-style-type: none;
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: -10px 10px 25px 0px var(--color-orange-dark);
-    z-index: 1;
-    overflow: auto;
-}
-
-.showcase-dropdown-option {
-    display: block;
-    padding: 0.7rem;
-    font-size: 1rem;
-    border: 2px solid var(--color-red-vibrant);
-    opacity: 0.7;
-    font-weight: bold;
-}
-
-.showcase-dropdown-option:hover {
-    cursor: pointer;
+.tab-horizontal-border {
+    position: static;
+    margin-left: -8%;
+    height: 1.5px;
+    width: 100vw;
+    background: var(--tabs-horizontal-border-color);
 }
 
 .showcase {
@@ -806,8 +786,7 @@ a {
 }
 
 #mentors .members {
-    --width: 250px;
-    gap: 10vh 5vw;
+    gap: 7.24414rem;
     margin: 0 15vw;
     margin-bottom: 8vh;
 }
@@ -872,7 +851,7 @@ a {
     max-width: 60%;
     font-family: Inter, sans-serif;
 }
-.season-selection-button, .outreach-button1, .outreach-button2 {
+.season-select-button, .outreach-button1, .outreach-button2 {
     padding: 1rem;
     font-size: 1.3rem;
     border: 2px solid var(--color-red-vibrant);
@@ -882,6 +861,17 @@ a {
     box-shadow: -10px 10px 25px 0px var(--color-orange-dark);
     font-weight: bold;
 }
+.season-select-button {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+.selected-tab {
+    background: var(--selected-tab-background-color);
+}
+
 .panel2 {
     opacity: 0;
     display: none;
