@@ -354,6 +354,12 @@ body:hover #mouse-follower {
     flex-direction: column;
 }
 
+.mecanums-h-tab-after {
+    margin: 0 8%;
+    display: flex;
+    flex-direction: row;
+}
+
 .h-tab-info {
     display: flex;
 }
@@ -443,6 +449,14 @@ body:hover #mouse-follower {
     min-width: 250px;
 }
 
+.visuals__right {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    padding: 0 1rem;
+}
 
 .about-image-bg {
     /* padding: 10px; */
@@ -457,6 +471,25 @@ body:hover #mouse-follower {
 }
 
 .about-image>img {
+    object-fit: cover;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.mecanums-image-bg {
+    /* padding: 10px; */
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 800px;
+    z-index: -1;
+    background: var(--vib-red-to-vib-orange-gradient);
+    box-shadow: -10px 10px 10px var(--color-red-dark);
+    border-radius: 1.6rem;
+}
+
+.mecanums-image>img {
     object-fit: cover;
     border-radius: 1.8rem;
     overflow: hidden;
