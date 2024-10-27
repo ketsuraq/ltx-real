@@ -496,15 +496,14 @@ body:hover #mouse-follower {
 
 .mecanums-image-bg {
     /* padding: 10px; */
-    --bg-size: 200%;
     width: 100%;
     max-width: 800px;
     height: 100%;
     max-height: 800px;
     z-index: -1;
-    background: var(--linear-gradient-rainbow) 0 0 / var(--bg-size) 100%;
+    background: var(--vib-red-to-vib-orange-gradient);
+    box-shadow: -10px 10px 10px var(--color-red-dark);
     border-radius: 1.6rem;
-    animation: move-bg 8s infinite linear;
 }
 
 .mecanums-image>img {
