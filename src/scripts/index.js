@@ -73,7 +73,7 @@ const loadPage = () => {
 
 const more = document.querySelector(".outreach-button1");
 const less = document.querySelector(".outreach-button2");
-const addPanels = document.querySelectorAll(".panel2");
+const addPanels = document.querySelectorAll(".container2");
 
 more.addEventListener('click', () => {
   addPanels.forEach(panel => {
