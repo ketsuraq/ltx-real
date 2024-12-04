@@ -14,14 +14,18 @@ const loadBallAnimation = () => {
   const colors = ["#ff000080", "#ff77005e", "#ff0000", "#ff7700", "#930000"];
   const avgBallSize = 10; // in rem
   // number of balls present in the page
+<<<<<<< HEAD
   const numBalls = 50;
+=======
+  const numBalls = 30;
+>>>>>>> e186305f07604a109092ceae93fbde04de187b6f
   const balls = [];
 
   for (let i = 0; i < numBalls; i++) {
     const ball = document.createElement("div");
     ball.classList.add("ball");
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-    ball.style.left = `${Math.random() * 95}%`;
+    ball.style.left = `${Math.random() * 100}%`;
     ball.style.top = `${Math.random() * 95}%`;
     ball.style.width = `${Math.random() * avgBallSize}rem`;
     ball.style.height = ball.style.width;
@@ -32,7 +36,7 @@ const loadBallAnimation = () => {
 
   const animationDuration = 5000; // (miliseconds)
   // Keyframes
-  const yDisplacement = 150; // in rem
+  const yDisplacement = -150; // in rem
   const xDisplacement = 110; // in rem
   balls.forEach((ball, id) => {
     const to = {
@@ -73,8 +77,7 @@ const loadPage = () => {
 
 const more = document.querySelector(".outreach-button1");
 const less = document.querySelector(".outreach-button2");
-const addPanels = document.querySelectorAll(".panel2");
-const seasonsDropdown = document.querySelector(".season-selection-button");
+const addPanels = document.querySelectorAll(".container2");
 
 more.addEventListener('click', () => {
   addPanels.forEach(panel => {
@@ -98,19 +101,12 @@ less.addEventListener('click', () => {
   less.style.display = 'none';
 });
 
-seasonsDropdown.addEventListener('click', () => {
-  document.querySelector(".dropdown-content").style.display = 'block';
-  document.querySelector(".season-selection-button").style.borderBottomRightRadius = '0rem';
-})
-
 window.onclick = function(event) {
-  if (!event.target.matches('.season-selection-button')) {
-    document.querySelector(".dropdown-content").style.display = 'none';
-    document.querySelector(".season-selection-button").style.borderBottomRightRadius = '1rem';
-  }
-  if (event.target.matches('.showcase-dropdown-option')) {
-    document.querySelectorAll(".showcase").forEach((element) => {if(element.classList.contains("primary")) element.classList.remove("primary")})
-    document.querySelector(`#${event.target.id}-showcase`).classList.add("primary");
+  if (event.target.matches('.season-select-button')) {
+    document.querySelector(".selected-tab").classList.toggle("selected-tab");
+    event.target.classList.toggle("selected-tab");
+    document.querySelector(".primary").classList.toggle("primary");
+    document.querySelector(`#${event.target.id}-showcase`).classList.toggle("primary");
   }
 }
 

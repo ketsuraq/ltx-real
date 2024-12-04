@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" href="resources/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <link rel="manifest" href="manifest.json" />
-    <title>LTX</title>
+    <title>VLR</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
     </style>
@@ -15,7 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
     </style>
     <link rel="stylesheet" href="styles.css">
-    <script src="../dist/bundle.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#robot">Our Robot</a>
             </div>
             <div class="nav-link-container">
-                <a class="nav-link" href="#mentors">Mentors</a>
+                <a class="nav-link" href="#mentors">Our Mentors</a>
             </div>
             <div class="nav-link-container">
                 <a class="nav-link" href="#outreach">Outreach</a>
@@ -57,7 +57,7 @@
                 <a class="nav-link" href="#robot">Our Robot</a>
             </div>
             <div class="nav-link-container">
-                <a class="nav-link" href="#mentors">Mentors</a>
+                <a class="nav-link" href="#mentors">Our Mentors</a>
             </div>
             <div class="nav-link-container">
                 <a class="nav-link" href="#outreach">Outreach</a>
@@ -69,7 +69,7 @@
     </header>
     <section id="hero">
         <h1 class="hero__text">
-            Welcome to <span class='text-gradient'>Lituanica VLR</span>,
+            Welcome to <br> <span class='text-gradient'>Vilnius Lyceum Robotics</span>, <br>
             leading the way in the future of robotics
         </h1>
         <h2 class="number-container">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" visuals__right">
+                <div class="visuals__right">
                 </div>
             </div>
             <div class="socials">
@@ -199,87 +199,88 @@
             
         </div>
         <div class="h-tab-after">
-            <div class="season-selection-dropdown">
-                <button class="season-selection-button">Select season</button>
-                <ul class="dropdown-content">
-                    <li class="showcase-dropdown-option" id="into-the-deep">INTO THE DEEP (2024/2025)</li>
-                    <li class="showcase-dropdown-option" id="centerstage">CENTERSTAGE (2023/2024)</li>
-                </ul>
+            <div class="season-select-tabs">
+                <div class="tab-horizontal-border"></div>
+                <button class="season-select-button selected-tab" id="into-the-deep">INTO THE DEEP (2024/2025)</button><button class="season-select-button" id="centerstage">CENTERSTAGE (2023/2024)</button>
+                <div class="tab-horizontal-border"></div>
             </div>
-            <div class="showcase primary" id="into-the-deep-showcase">
-                <div class="tab-text about__text">
-                    <h3 class="text-big about__text-big">
-                        The robot for the <span class="text-gradient">INTO THE DEEP℠</span> challenge of the <span class="text-gradient">FTC 2024-2025</span> season is coming soon... 
-                    </h3>
-                    <a href="https://www.linktr.ee/24474" class="social-link" style="font-size: 3rem; width: fit-content;"><span class='text-gradient'>Stay tuned!</span></a>
-                    <!-- <h3 class="text-big about__text-big">
-                        Meet the robot of the <span class="text-gradient">INTO THE DEEP℠</span> challenge
-                        of the <span class="text-gradient">FTC 2024-2025</span> season.
-                    </h3> -->
+            <br><br><br>
+            <div class="showcase-container">
+                <div class="showcase primary" id="into-the-deep-showcase">
+                    <div class="tab-text about__text">
+                        <h3 class="text-big about__text-big">
+                            The robot for the <span class="text-gradient">INTO THE DEEP℠</span> challenge of the <span class="text-gradient">FTC 2024-2025</span> season is coming soon... 
+                        </h3>
+                        <a href="https://www.linktr.ee/24474" class="social-link" style="font-size: 3rem; width: fit-content;"><span class='text-gradient'>Stay tuned!</span></a>
+                        <!-- <h3 class="text-big about__text-big">
+                            Meet the robot of the <span class="text-gradient">INTO THE DEEP℠</span> challenge
+                            of the <span class="text-gradient">FTC 2024-2025</span> season.
+                        </h3> -->
+                    </div>
                 </div>
-            </div>
-            <div class="showcase" id="centerstage-showcase">
-                <div class="tab-text about__text">
-                    <h3 class="text-big about__text-big">
-                        Meet the robot for the <span class="text-gradient">CENTERSTAGE℠</span> challenge of the <span class="text-gradient">FTC 2023-2024</span> season.
-                    </h3>
-                </div>
-                <h6 class="click-read">←  Click to read more  →</h6>
-                <div class="mind-map">
-                    <div class="surrounding-bubbles">
-                        <div class="bubble top-left">
-                            <p>Claw</p>
-                            <a href="resources/component-pages/claw.html">
-                                <img src="resources/robot-img/Claw_render.png" alt="claw">
-                            </a>
-                        </div>
-                        <div class="bubble top">
-                            <p>Lift</p>
-                            <a href="resources/component-pages/lift.html">
-                                <img src="resources/robot-img/Back_of_lift_thing_render.png" alt="lift">
-                            </a>
-                        </div>
-                        <div class="bubble top-right">
-                            <p>Plane Ejection Mechanism</p>
-                            <a href="resources/component-pages/pem.html">
-                                <img src="resources/robot-img/vliegtuigschieter_render.png" alt="pem">
-                            </a>
-                        </div>
-                        <div class="bubble mid-left">
-                            <p>Arm</p>
-                            <a href="resources/component-pages/arm.html">
-                                <img src="resources/robot-img/Lift_and_claw_render.png" alt="arm">
-                            </a>
-                        </div>
-                        <div class="bubble central-bubble">
-                            <p>The Robot</p>
-                            <a href="resources/component-pages/robot.html">
-                                <img src="resources/robot-img/8th_champ_render_for_test.png" alt="robot">
-                            </a>
-                        </div>
-                        <div class="bubble mid-right">
-                            <p>Hangman</p>
-                            <a href="resources/component-pages/hangman.html">
-                                <img src="resources/robot-img/Hang_system_render.png" alt="sides">
-                            </a>
-                        </div>
-                        <div class="bubble bottom-left">
-                            <p>Mecanum Drivetrain</p>
-                            <a href="resources/component-pages/drivetrain.html">
-                                <img src="resources/robot-img/drivetrain_bottom_render.png" alt="drivetrain">
-                            </a>
-                        </div>
-                        <div class="bubble bottom">
-                            <p>Swerve Drivetrain (Demo)</p>
-                            <a href="resources/component-pages/swerve.html">
-                                <img src="resources/robot-img/Swerve_render_2.png" alt="swerve">
-                            </a>
-                        </div>
-                        <div class="bubble bottom-right">
-                            <p>Extension mechanism</p>
-                            <a href="resources/component-pages/extension.html">
-                                <img src="resources/robot-img/Extended_lift_full_bobot_better_qual.png" alt="extended">
-                            </a>
+                <div class="showcase" id="centerstage-showcase">
+                    <div class="tab-text about__text">
+                        <h3 class="text-big about__text-big">
+                            Meet the robot for the <span class="text-gradient">CENTERSTAGE℠</span> challenge of the <span class="text-gradient">FTC 2023-2024</span> season.
+                        </h3>
+                    </div>
+                    <h6 class="click-read">←  Click to read more  →</h6>
+                    <div class="mind-map">
+                        <div class="surrounding-bubbles">
+                            <div class="bubble top-left">
+                                <p>Claw</p>
+                                <a href="resources/component-pages/claw.html">
+                                    <img src="resources/robot-img/Claw_render.png" alt="claw">
+                                </a>
+                            </div>
+                            <div class="bubble top">
+                                <p>Lift</p>
+                                <a href="resources/component-pages/lift.html">
+                                    <img src="resources/robot-img/Back_of_lift_thing_render.png" alt="lift">
+                                </a>
+                            </div>
+                            <div class="bubble top-right">
+                                <p>Plane Ejection Mechanism</p>
+                                <a href="resources/component-pages/pem.html">
+                                    <img src="resources/robot-img/vliegtuigschieter_render.png" alt="pem">
+                                </a>
+                            </div>
+                            <div class="bubble mid-left">
+                                <p>Arm</p>
+                                <a href="resources/component-pages/arm.html">
+                                    <img src="resources/robot-img/Lift_and_claw_render.png" alt="arm">
+                                </a>
+                            </div>
+                            <div class="bubble central-bubble">
+                                <p>The Robot</p>
+                                <a href="resources/component-pages/robot.html">
+                                    <img src="resources/robot-img/8th_champ_render_for_test.png" alt="robot">
+                                </a>
+                            </div>
+                            <div class="bubble mid-right">
+                                <p>Hangman</p>
+                                <a href="resources/component-pages/hangman.html">
+                                    <img src="resources/robot-img/Hang_system_render.png" alt="sides">
+                                </a>
+                            </div>
+                            <div class="bubble bottom-left">
+                                <p>Mecanum Drivetrain</p>
+                                <a href="resources/component-pages/drivetrain.html">
+                                    <img src="resources/robot-img/drivetrain_bottom_render.png" alt="drivetrain">
+                                </a>
+                            </div>
+                            <div class="bubble bottom">
+                                <p>Swerve Drivetrain (Demo)</p>
+                                <a href="resources/component-pages/swerve.html">
+                                    <img src="resources/robot-img/Swerve_render_2.png" alt="swerve">
+                                </a>
+                            </div>
+                            <div class="bubble bottom-right">
+                                <p>Extension mechanism</p>
+                                <a href="resources/component-pages/extension.html">
+                                    <img src="resources/robot-img/Extended_lift_full_bobot_better_qual.png" alt="extended">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -362,6 +363,13 @@
             <div class="outreach-container">
                 <div class="outreach-panel">
                     <div class="outreach-image">
+                        <img src="resources/outreach-photos/brazil-meet.jpg" alt="picture">
+                    </div>
+                    <div class="outreach-date">2024/10/30</div>
+                    <p class="outreach-text">Meeting with Team Dumonters 22977.</p>
+                </div>
+                <div class="outreach-panel">
+                    <div class="outreach-image">
                         <img src="resources/outreach-photos/Apollo_team.png" alt="picture">
                     </div>
                     <div class="outreach-date">2024/02/27</div>
@@ -374,6 +382,8 @@
                     <div class="outreach-date">2024/02/03</div>
                     <p class="outreach-text">Judging at our local FIRST Lego League contest.</p>
                 </div>
+            </div>
+            <div class="outreach-container container2">
                 <div class="outreach-panel">
                     <div class="outreach-image">
                         <img src="resources/outreach-photos/lyceum_presentation.png" alt="picture">
@@ -381,44 +391,46 @@
                     <div class="outreach-date">2023/12/22</div>
                     <p class="outreach-text">Presenting our team to the Vilnius Lyceum community.</p>
                 </div>
-                <button class="outreach-button1">More...</button>
-                <div class="outreach-panel panel2">
+                <div class="outreach-panel">
                     <div class="outreach-image">
                         <img src="resources/outreach-photos/ltx-training.png" alt="picture">
                     </div>
                     <div class="outreach-date">2023/12/09</div>
                     <p class="outreach-text">Participating in the local LTX training games.</p>
                 </div>
-                <div class="outreach-panel panel2">
+                <div class="outreach-panel">
                     <div class="outreach-image">
                         <img src="resources/outreach-photos/elinta.png" alt="picture">
                     </div>
                     <div class="outreach-date">2023/10/13</div>
                     <p class="outreach-text">Meeting with our sponsor Elinta Robotics.</p>
                 </div>
-                <div class="outreach-panel panel2">
+            </div>
+            <div class="outreach-container container2">
+                <div class="outreach-panel">
                     <div class="outreach-image">
                         <img src="resources/outreach-photos/EVENT.png" alt="picture">
                     </div>
                     <div class="outreach-date">2023/10/10</div>
                     <p class="outreach-text">Team captain represented Lithuania at First Global Challenge Singapore.</p>
                 </div>
-                <div class="outreach-panel panel2">
+                <div class="outreach-panel">
                     <div class="outreach-image">
                         <img src="resources/outreach-photos/zalvaris_meet.png" alt="picture">
                     </div>
                     <div class="outreach-date">2023/09/25</div>
                     <p class="outreach-text">Meeting with our sponsor Žalvaris.</p>
                 </div>
-                <div class="outreach-panel panel2">
+                <div class="outreach-panel">
                     <div class="outreach-image">
                         <img src="resources/outreach-photos/acme.jpg" alt="picture">
                     </div>
                     <div class="outreach-date">2023/09/25</div>
                     <p class="outreach-text">Meeting with our sponsor ACME Grupe.</p>
                 </div>
-                <button class="outreach-button2">Less...</button>
             </div>
+            <button class="outreach-button1">More...</button>
+            <button class="outreach-button2">Less...</button>
         </div>
     </section>
 
@@ -430,7 +442,7 @@
             </div>
             <div class="h-tab-bar work__tab-bar"></div>
         </div>
-        <div class="member-title"><span class="text-gradient">Lituanica VLR</span> team</div>
+        <div class="member-title"><span class="text-gradient">Vilnius Lyceum Robotics</span> team</div>
         <div class="members">
             <div class="member">
                 <div class="member-pane m1">
@@ -445,7 +457,7 @@
             <div class="member">
                 <div class="member-pane m2">
                     <div class="member-name">Nojus</div>
-                    <div class="member-about">Lead Coding</div>
+                    <div class="member-about">Programming Lead</div>
                     <div class="member-quote">"50% of the time it works 10% of the time."</div>
                 </div>
                 <div class="profile-picture">
@@ -521,26 +533,6 @@
                 </div>
                 <div class="profile-picture">
                     <img src="resources/member-photos/lina.png" alt="lina">
-                </div>
-            </div>
-            <div class="member">
-                <div class="member-pane m2">
-                    <div class="member-name">Augustas</div>
-                    <div class="member-about">CAD, Design</div>
-                    <div class="member-quote">"Life’s like food, the more you wait before eating, the colder it gets."</div>
-                </div>
-                <div class="profile-picture">
-                    <img src="resources/member-photos/augustas.png" alt="augustas">
-                </div>
-            </div>
-            <div class="member">
-                <div class="member-pane m2">
-                    <div class="member-name">Marius</div>
-                    <div class="member-about">Coding</div>
-                    <div class="member-quote">"Marius."</div>
-                </div>
-                <div class="profile-picture">
-                    <img src="resources/member-photos/marius.png" alt="marius">
                 </div>
             </div>
             <div class="member">

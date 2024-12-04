@@ -1,6 +1,6 @@
-# LTX Website
+# VLR Website
 
-A simple UI demonstrating the objectives of the LTX team and their progress
+A simple UI demonstrating the objectives of the Vilnius Lyceum Robotics team and their progress
 
 ## How to setup
 
@@ -10,7 +10,6 @@ $ git clone git@github.com:ketsuraq/ltx-real.git
 
 # Navigate into the repository
 $ cd ltx-real
-
-# Execute 'all' script, which installs required dependencies and builds the application
-$ npm run all
 ```
+
+The primary page of the website is accessible in the src/index.html file.
