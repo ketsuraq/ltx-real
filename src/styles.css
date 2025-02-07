@@ -630,6 +630,14 @@ body:hover #mouse-follower {
     border-radius: 1.2rem;
 }
 
+#saida-club-grid{
+    display: grid;
+    align-items: center;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
 /* BALL ANIMATION */
 
 .ball {
