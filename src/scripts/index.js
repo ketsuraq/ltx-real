@@ -14,11 +14,7 @@ const loadBallAnimation = () => {
   const colors = ["#ff000080", "#ff77005e", "#ff0000", "#ff7700", "#930000"];
   const avgBallSize = 10; // in rem
   // number of balls present in the page
-<<<<<<< HEAD
-  const numBalls = 50;
-=======
   const numBalls = 30;
->>>>>>> e186305f07604a109092ceae93fbde04de187b6f
   const balls = [];
 
   for (let i = 0; i < numBalls; i++) {
