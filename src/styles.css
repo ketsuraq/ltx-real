@@ -714,7 +714,6 @@ body:hover #mouse-follower {
 .member-quote {
     font-family: Inter, sans-serif;
     font-style: italic;
-    padding: 0 1rem;
     text-align: center;
 }
 .m1 > * {
