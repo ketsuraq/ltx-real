@@ -945,7 +945,26 @@ a {
     display: none;
 }
 
-/* PARTNERS */
+/* PARTNERS AND SPONSORS*/
+.sponsors {
+    --width: 250px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--width), 1fr));
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    margin: 0 50px;
+}
+
+.sponsor {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .partner-container {
     justify-content: center;
     align-items: center;
