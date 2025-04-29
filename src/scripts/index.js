@@ -71,8 +71,8 @@ const loadPage = () => {
   loadHamburger();
 };
 
-const more = document.querySelector(".outreach-button1");
-const less = document.querySelector(".outreach-button2");
+const more = document.querySelector("#more");
+const less = document.querySelector("#less");
 const addPanels = document.querySelectorAll(".container2");
 
 more.addEventListener('click', () => {
