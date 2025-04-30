@@ -377,6 +377,11 @@ body:hover #mouse-follower {
     flex-direction: row;
 }
 
+.mecanum-text {
+    font-size: 3vh !important;
+    max-height: 35vh;
+}
+
 .h-tab-info {
     display: flex;
 }
@@ -468,7 +473,7 @@ body:hover #mouse-follower {
 
 .visuals__right {
     position: relative;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     display: flex;
     justify-content: flex-end;
     gap: 3rem;
@@ -513,6 +518,9 @@ body:hover #mouse-follower {
     padding: 1rem;
 }
 
+.original-mecanums-image-bg {
+    min-width: 30vw;
+}
 
 /* ABOUT */
 #about {
